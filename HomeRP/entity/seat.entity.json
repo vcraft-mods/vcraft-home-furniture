@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "vcraft:seat",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/vc_empty"
+      },
+      "geometry": {
+        "default": "geometry.vcraft.empty"
+      },
+      "render_controllers": [
+        "controller.render.vcraft_empty"
+      ]
+    }
+  }
+}

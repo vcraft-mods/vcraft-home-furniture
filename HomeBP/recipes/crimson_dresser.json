@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vcraft:crimson_dresser"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "PPP",
+      "PCP",
+      "PPP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:crimson_planks"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:crimson_planks"
+      },
+      {
+        "item": "minecraft:chest"
+      }
+    ],
+    "result": {
+      "item": "vcraft:crimson_dresser",
+      "count": 1
+    }
+  }
+}

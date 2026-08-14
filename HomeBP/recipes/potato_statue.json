@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vcraft:potato_statue"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "PPP",
+      "PCP",
+      "PPP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:potato"
+      },
+      "C": {
+        "item": "minecraft:copper_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:copper_block"
+      }
+    ],
+    "result": {
+      "item": "vcraft:potato_statue",
+      "count": 1
+    }
+  }
+}

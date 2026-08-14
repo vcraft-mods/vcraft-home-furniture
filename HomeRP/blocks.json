@@ -1,0 +1,154 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "vcraft:bamboo_ladder": {
+    "sound": "wood"
+  },
+  "vcraft:oak_chair": {
+    "sound": "wood"
+  },
+  "vcraft:oak_desk": {
+    "sound": "wood"
+  },
+  "vcraft:oak_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:spruce_chair": {
+    "sound": "wood"
+  },
+  "vcraft:spruce_desk": {
+    "sound": "wood"
+  },
+  "vcraft:spruce_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:birch_chair": {
+    "sound": "wood"
+  },
+  "vcraft:birch_desk": {
+    "sound": "wood"
+  },
+  "vcraft:birch_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:jungle_chair": {
+    "sound": "wood"
+  },
+  "vcraft:jungle_desk": {
+    "sound": "wood"
+  },
+  "vcraft:jungle_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:acacia_chair": {
+    "sound": "wood"
+  },
+  "vcraft:acacia_desk": {
+    "sound": "wood"
+  },
+  "vcraft:acacia_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:dark_oak_chair": {
+    "sound": "wood"
+  },
+  "vcraft:dark_oak_desk": {
+    "sound": "wood"
+  },
+  "vcraft:dark_oak_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:mangrove_chair": {
+    "sound": "wood"
+  },
+  "vcraft:mangrove_desk": {
+    "sound": "wood"
+  },
+  "vcraft:mangrove_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:cherry_chair": {
+    "sound": "wood"
+  },
+  "vcraft:cherry_desk": {
+    "sound": "wood"
+  },
+  "vcraft:cherry_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:pale_oak_chair": {
+    "sound": "wood"
+  },
+  "vcraft:pale_oak_desk": {
+    "sound": "wood"
+  },
+  "vcraft:pale_oak_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:crimson_chair": {
+    "sound": "wood"
+  },
+  "vcraft:crimson_desk": {
+    "sound": "wood"
+  },
+  "vcraft:crimson_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:warped_chair": {
+    "sound": "wood"
+  },
+  "vcraft:warped_desk": {
+    "sound": "wood"
+  },
+  "vcraft:warped_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:bamboo_chair": {
+    "sound": "wood"
+  },
+  "vcraft:bamboo_desk": {
+    "sound": "wood"
+  },
+  "vcraft:bamboo_dresser": {
+    "sound": "wood"
+  },
+  "vcraft:carpet_stripe": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_check": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_diamond": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_floral": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_wave": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_frame": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_tatami": {
+    "sound": "cloth"
+  },
+  "vcraft:carpet_persian": {
+    "sound": "cloth"
+  },
+  "vcraft:pc_black": {
+    "sound": "stone"
+  },
+  "vcraft:pc_white": {
+    "sound": "stone"
+  },
+  "vcraft:quartz_sink": {
+    "sound": "stone"
+  },
+  "vcraft:potato_statue": {
+    "sound": "stone"
+  }
+}

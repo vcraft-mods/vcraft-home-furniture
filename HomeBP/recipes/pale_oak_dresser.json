@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vcraft:pale_oak_dresser"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "PPP",
+      "PCP",
+      "PPP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:pale_oak_planks"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:pale_oak_planks"
+      },
+      {
+        "item": "minecraft:chest"
+      }
+    ],
+    "result": {
+      "item": "vcraft:pale_oak_dresser",
+      "count": 1
+    }
+  }
+}

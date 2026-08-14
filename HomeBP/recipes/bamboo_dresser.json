@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vcraft:bamboo_dresser"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "PPP",
+      "PCP",
+      "PPP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:bamboo_planks"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bamboo_planks"
+      },
+      {
+        "item": "minecraft:chest"
+      }
+    ],
+    "result": {
+      "item": "vcraft:bamboo_dresser",
+      "count": 1
+    }
+  }
+}

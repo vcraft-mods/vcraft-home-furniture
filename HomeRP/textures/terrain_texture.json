@@ -1,0 +1,110 @@
+{
+  "resource_pack_name": "vcraft_home",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "vc_bamboo_ladder": {
+      "textures": "textures/blocks/vc_bamboo_ladder"
+    },
+    "vc_planks_oak": {
+      "textures": "textures/blocks/vc_planks_oak"
+    },
+    "vc_metal": {
+      "textures": "textures/blocks/vc_metal"
+    },
+    "vc_planks_spruce": {
+      "textures": "textures/blocks/vc_planks_spruce"
+    },
+    "vc_planks_birch": {
+      "textures": "textures/blocks/vc_planks_birch"
+    },
+    "vc_planks_jungle": {
+      "textures": "textures/blocks/vc_planks_jungle"
+    },
+    "vc_planks_acacia": {
+      "textures": "textures/blocks/vc_planks_acacia"
+    },
+    "vc_planks_dark_oak": {
+      "textures": "textures/blocks/vc_planks_dark_oak"
+    },
+    "vc_planks_mangrove": {
+      "textures": "textures/blocks/vc_planks_mangrove"
+    },
+    "vc_planks_cherry": {
+      "textures": "textures/blocks/vc_planks_cherry"
+    },
+    "vc_planks_pale_oak": {
+      "textures": "textures/blocks/vc_planks_pale_oak"
+    },
+    "vc_planks_crimson": {
+      "textures": "textures/blocks/vc_planks_crimson"
+    },
+    "vc_planks_warped": {
+      "textures": "textures/blocks/vc_planks_warped"
+    },
+    "vc_planks_bamboo": {
+      "textures": "textures/blocks/vc_planks_bamboo"
+    },
+    "vc_carpet_stripe": {
+      "textures": "textures/blocks/vc_carpet_stripe"
+    },
+    "vc_carpet_check": {
+      "textures": "textures/blocks/vc_carpet_check"
+    },
+    "vc_carpet_diamond": {
+      "textures": "textures/blocks/vc_carpet_diamond"
+    },
+    "vc_carpet_floral": {
+      "textures": "textures/blocks/vc_carpet_floral"
+    },
+    "vc_carpet_wave": {
+      "textures": "textures/blocks/vc_carpet_wave"
+    },
+    "vc_carpet_frame": {
+      "textures": "textures/blocks/vc_carpet_frame"
+    },
+    "vc_carpet_tatami": {
+      "textures": "textures/blocks/vc_carpet_tatami"
+    },
+    "vc_carpet_persian": {
+      "textures": "textures/blocks/vc_carpet_persian"
+    },
+    "vc_pc_black": {
+      "textures": "textures/blocks/vc_pc_black"
+    },
+    "vc_pc_key_black": {
+      "textures": "textures/blocks/vc_pc_key_black"
+    },
+    "vc_pc_screen_on": {
+      "textures": "textures/blocks/vc_pc_screen_on"
+    },
+    "vc_pc_screen_off": {
+      "textures": "textures/blocks/vc_pc_screen_off"
+    },
+    "vc_pc_white": {
+      "textures": "textures/blocks/vc_pc_white"
+    },
+    "vc_pc_key_white": {
+      "textures": "textures/blocks/vc_pc_key_white"
+    },
+    "vc_quartz_side": {
+      "textures": "textures/blocks/vc_quartz_side"
+    },
+    "vc_quartz_top": {
+      "textures": "textures/blocks/vc_quartz_top"
+    },
+    "vc_water": {
+      "textures": "textures/blocks/vc_water"
+    },
+    "vc_potato": {
+      "textures": "textures/blocks/vc_potato"
+    },
+    "vc_potato_face": {
+      "textures": "textures/blocks/vc_potato_face"
+    },
+    "vc_copper": {
+      "textures": "textures/blocks/vc_copper"
+    }
+  }
+}

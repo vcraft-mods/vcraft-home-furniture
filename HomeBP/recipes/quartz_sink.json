@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vcraft:quartz_sink"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "QIQ",
+      "Q Q",
+      "QQQ"
+    ],
+    "key": {
+      "Q": {
+        "item": "minecraft:quartz_block"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:quartz_block"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "result": {
+      "item": "vcraft:quartz_sink",
+      "count": 1
+    }
+  }
+}
