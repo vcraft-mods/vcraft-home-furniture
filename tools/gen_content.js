@@ -640,7 +640,7 @@ writeJSON(path.join(RP, 'render_controllers', 'vcraft.render_controllers.json'),
 /* ------------------------------------------------------------ 言語ファイル */
 
 const UI = [
-  ['pack.name', 'Vcraft ホーム家具', 'Vcraft Home Furniture'],
+  ['pack.name', 'Vcraft: ホーム家具', 'Vcraft: Home Furniture'],
   ['pack.description', '竹のはしご・全木材の椅子/机/タンス・模様付きカーペット・モダンPC・クォーツのシンク。', 'Bamboo ladder, chairs/desks/dressers for every wood, patterned carpets, a modern PC and a quartz sink.'],
   ['vcraft.ui.close', '閉じる', 'Close'],
   ['vcraft.ui.back', '戻る', 'Back'],
@@ -677,19 +677,27 @@ const UI = [
 
 const blockLines = (list) => list.map(([k, v]) => `${k}=${v}`).join('\n');
 
+// パック一覧では BP と RP が並ぶ。同じ名前だと「片方だけ有効にしている」事故に
+// 気づけないので、名前の末尾に [BP] / [RP] を足して区別できるようにする。
+const tagged = (rows, tag, col) =>
+  rows.map(([k, ja, en]) => {
+    const v = col === 'ja' ? ja : en;
+    return `${k}=${k === 'pack.name' ? `${v} ${tag}` : v}`;
+  }).join('\n');
+
 writeText(
   path.join(RP, 'texts', 'ja_JP.lang'),
-  `${UI.map(([k, ja]) => `${k}=${ja}`).join('\n')}\n${blockLines(langJA)}\n`
+  `${tagged(UI, '[RP]', 'ja')}\n${blockLines(langJA)}\n`
 );
 writeText(
   path.join(RP, 'texts', 'en_US.lang'),
-  `${UI.map(([k, , en]) => `${k}=${en}`).join('\n')}\n${blockLines(langEN)}\n`
+  `${tagged(UI, '[RP]', 'en')}\n${blockLines(langEN)}\n`
 );
 writeJSON(path.join(RP, 'texts', 'languages.json'), ['en_US', 'ja_JP']);
 
 const packOnly = UI.filter(([k]) => k.startsWith('pack.'));
-writeText(path.join(BP, 'texts', 'ja_JP.lang'), `${packOnly.map(([k, ja]) => `${k}=${ja}`).join('\n')}\n`);
-writeText(path.join(BP, 'texts', 'en_US.lang'), `${packOnly.map(([k, , en]) => `${k}=${en}`).join('\n')}\n`);
+writeText(path.join(BP, 'texts', 'ja_JP.lang'), `${tagged(packOnly, '[BP]', 'ja')}\n`);
+writeText(path.join(BP, 'texts', 'en_US.lang'), `${tagged(packOnly, '[BP]', 'en')}\n`);
 writeJSON(path.join(BP, 'texts', 'languages.json'), ['en_US', 'ja_JP']);
 
 console.log(

@@ -11,8 +11,25 @@
 import { world, system, ItemStack, EquipmentSlot } from '@minecraft/server';
 import { ActionFormData, ModalFormData } from '@minecraft/server-ui';
 
+/** イベントがある時だけ購読する。無ければ false を返すだけで、他の機能は生かす。 */
+function on(bus, name, handler) {
+  const ev = bus?.[name];
+  if (!ev || typeof ev.subscribe !== "function") {
+    console.warn(`[vcraft] ${name} が無いため、この機能は無効です`);
+    return false;
+  }
+  try {
+    ev.subscribe(handler);
+    return true;
+  } catch (error) {
+    console.warn(`[vcraft] ${name} の購読に失敗: ${error}`);
+    return false;
+  }
+}
+
+
 const NS = 'vcraft';
-const VERSION = '1.0.3';
+const VERSION = '1.0.4'; // HomeBP/manifest.json の header.version と揃える（validate.js が検査する）
 const WOODS = [
   'oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak',
   'mangrove', 'cherry', 'pale_oak', 'crimson', 'warped', 'bamboo',
@@ -37,7 +54,7 @@ const floorVec = (loc) => ({ x: Math.floor(loc.x), y: Math.floor(loc.y), z: Math
 
 /* ==================================================== 右クリックの振り分け */
 
-world.beforeEvents.playerInteractWithBlock.subscribe((event) => {
+on(world.beforeEvents, "playerInteractWithBlock", (event) => {
   // 同じ操作で2回飛んでくることがあるので2回目は捨てる
   if (event.isFirstEvent === false) return;
   const { player, block } = event;
@@ -206,12 +223,12 @@ function spillStorage(dimension, location) {
   }
 }
 
-world.afterEvents.playerBreakBlock.subscribe((event) => {
+on(world.afterEvents, "playerBreakBlock", (event) => {
   if (!DRESSERS.has(event.brokenBlockPermutation.type.id)) return;
   spillStorage(event.dimension, event.block.location);
 });
 
-world.afterEvents.blockExplode.subscribe((event) => {
+on(world.afterEvents, "blockExplode", (event) => {
   if (!DRESSERS.has(event.explodedBlockPermutation.type.id)) return;
   spillStorage(event.dimension, event.block.location);
 });
@@ -463,7 +480,7 @@ function touchStatue(player, block) {
 
 // ワールドに入ったとき、ビヘイビアーパックが動いているかを本人に伝える。
 // このメッセージが出ない = BP が有効になっていない（家具も出てこない）。
-world.afterEvents.playerSpawn.subscribe((event) => {
+on(world.afterEvents, "playerSpawn", (event) => {
   if (!event.initialSpawn) return;
   event.player.sendMessage(
     `§a[Vcraft]§r ホーム家具 §7v${VERSION}§r を読み込みました（ブロック49種）。\n`
